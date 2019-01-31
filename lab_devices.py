@@ -15,6 +15,7 @@ pe2 = Device(host="pe2", user=user, passwd=passwd, port="22")
 
 core_devices = [p1, p2, p3, p4, p5, p6]
 pe_devices = [pe1, pe2]
+edge_devices = [p1, p4, p3, p6]
 all_devices = core_devices+pe_devices
 
 

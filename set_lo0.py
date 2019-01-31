@@ -1,4 +1,7 @@
 from lab_devices import all_devices, test_devices, pe_devices
+from jnpr.junos.utils.config import Config
+
+import yaml
 
 def get_dict_from_yaml(yaml_filepath):
     with open(yaml_filepath, 'r') as stream:

@@ -5,7 +5,7 @@ from utilities import get_dict_from_yaml
 
 conf_file = "configs/junos-config-interfaces-ospf.conf"
 
-core_to_core_dict = get_dict_from_yaml("configs/pe-to-core-interfaces.yaml")
+core_to_core_dict = get_dict_from_yaml("configs/pe-core-mesh-interfaces.yaml")
 
 for device in pe_devices+core_devices:
     core_to_core_interfaces = core_to_core_dict[device.hostname]
